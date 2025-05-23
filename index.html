@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Library</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="central">Central Library</h1>
+    <div class="nav-bar">
+      <input class="search" placeholder="   Search for Books..." type="text">
+        <a class="navi" href="">Home</a>
+        <a class="navi" href="">Books</a>
+        <a class="navi"  href="">Articles</a>
+        <a class="navi" href="">Journals</a>
+        <a class="navi" href="">Plans</a>
+    </div>
+<div class="left-right">
+
+
+    <div class="form">
+        <form action="">
+            <h2>Login Form</h2>
+            
+            
+                <label for="">Enter Name  :</label>
+                <input type="text">
+                <br>
+                <br>
+                 <label for="">Enter Mobile No.  :</label>
+                <input type="number">
+                <br><br>
+                <label for="">Enter Password : </label>
+                <input type="password"><br>
+                <br>
+                <br>
+
+                <!-- start -->
+                 <main>
+  <!-- Login Section -->
+  <section id="login-section" class="form-section">
+    <form class="for" action="#" method="post">
+     
+      <!-- login fields… -->
+      <button type="submit" class="sub">Login</button>
+      <p class="signup-prompt">
+        New to Central Library?
+        <button type="button" id="show-signup" class="sig-btn">Sign In</button>
+      </p>
+    </form>
+  </section>
+
+  <!-- Signup Section (hidden by default) -->
+</div>
+<div>
+  <section id="signup-section" class="form-section" style="display: none;">
+    <form class="form" action="#" method="post">
+    
+      <h2>Sign In</h2>
+      <!-- signup fields… -->
+       <label for="">Enter Name  :</label>
+                <input type="text">
+                <br>
+                <br>
+                 <label for="">Enter Mobile No.  :</label>
+                <input type="number">
+                <br><br>
+                <label for="">Enter Password : </label>
+                <input type="password"><br>
+                <br>
+                <br>
+      <button type="submit" class="sub">Register</button>
+      <p class="signup-prompt">
+        Already have an account?
+        <button type="button" id="show-login" class="sig-btn">Login</button>
+      </p>
+    </form>
+  </section>
+</main>
+ 
+                <!-- end -->
+          
+           
+        </form>
+    </div>
+    <div class="div-img">
+        <img class="lib-img" src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D" alt="Image">
+    
+    </div>
+</div>   
+<script>
+  const loginSection  = document.getElementById('login-section');
+  const signupSection = document.getElementById('signup-section');
+
+  document.getElementById('show-signup').addEventListener('click', () => {
+    loginSection.style.display  = 'none';
+    signupSection.style.display = 'flex';
+    signupSection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('show-login').addEventListener('click', () => {
+    signupSection.style.display = 'none';
+    loginSection.style.display  = 'flex';
+    loginSection.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+
+</body>
+</html>

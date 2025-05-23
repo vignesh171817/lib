@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+body
+{
+    color: black;
+}
+.central
+{
+    background-color: burlywood;
+    border: 2px solid black;
+    border-radius: 5px;
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+    color: black;
+     font-family: "Fredericka the Great", serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  margin-top: 0px;
+}
+h1{
+    /* font-weight: 8000; */
+    font-size: 20;
+}
+.search
+{
+    border-radius: 40px;
+    font-size: 20px;
+    width: 270px;
+    border: 1px solid black;
+    height: 30px;
+}
+.navi
+{
+    transition: all 1s ease;
+    color: black;
+    text-decoration: none;
+   padding: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar
+{
+    font-size: 30px;
+    font-weight: bolder;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+.navi:hover
+{
+    text-decoration: underline;
+    color: rgb(225, 73, 73);
+    border: 3px solid rgb(225, 73, 73) ;
+    width: 60px;
+    padding: 15px;
+    border-radius: 10px;
+    
+
+}
+.navi::after
+{
+    transition: transform 0.3s ease;
+}
+.form
+{
+    border: 3px solid black;
+   margin-top: 45px;
+   width: 450px;
+   border-radius: 10px;
+   display: inline-block;
+
+
+}
+label
+{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 30px;
+    font-weight: bold;
+}
+.sub
+{
+    padding: 10px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 40px;
+   border: 1.5px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e81000;
+    font-weight: bolder;
+    color: white;
+    display: inline-block;
+}
+h2
+{
+    margin-left: 160px;
+    font-weight: bolder ;
+    font-size: 2200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sig
+{
+    /* margin: 20px;
+    margin-top: 0px; */
+}
+/* button style used for both toggles */
+.sig-btn {
+  padding: 0.7rem 1.5rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sig-btn:hover {
+  background: #1e7e34;
+}
+.log
+{
+    display: inline-block;
+}
+.lib-img
+{
+    display: flex;
+    justify-content: space-between;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    width: 300px;
+   
+}
+.div-img {
+ display: inline-block;
+  
+}
+.left-right
+{
+    justify-content: space-between;
+}
